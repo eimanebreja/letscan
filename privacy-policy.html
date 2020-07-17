@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>LETSCAN</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <body id="body-area">
+    <nav>
+      <div class="nav-area navigation">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <a href="index.html" class="link-logo">
+              <img src="assets/images/letscan_logo.svg" alt="" class="logo" />
+            </a>
+          </div>
+          <div class="nav-menu">
+            <ul class="menu-flex">
+              <li class="menu-base">
+                <a href="index.html" class="menu-link">トップ</a>
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#technology"
+                  id="link_technology"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >テクノロジー</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#gallery"
+                  id="link_gallery"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >ギャラリー</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#sample"
+                  id="link_sample"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >サンプル</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#faq"
+                  id="link_faq"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >FAQ</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#contact"
+                  id="link_contact"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="menu-icon" class="nav-menu-sp sp">
+            <div class="icon-set">
+              <a class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="slideout-menu">
+      <ul>
+        <li>
+          <a href="index.html">トップ</a>
+        </li>
+        <li>
+          <a id="link_technologys" href="#technology" onclick="closeNavSp()"
+            >テクノロジー
+          </a>
+        </li>
+        <li>
+          <a id="link_gallerys" href="#gallery" onclick="closeNavSp()"
+            >ギャラリー</a
+          >
+        </li>
+        <li>
+          <a id="link_samples" href="#sample" onclick="closeNavSp()"
+            >サンプル</a
+          >
+        </li>
+        <li>
+          <a id="link_faqs" href="#faq" onclick="closeNavSp()">FAQ </a>
+        </li>
+        <li>
+          <a id="link_contacts" href="#contact" onclick="closeNavSp()"
+            >お問い合わせ</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="privacy-area">
+        <div class="privacy-container">
+          <div class="privacy-title">
+            <h1>プライバシーポリシー</h1>
+          </div>
+          <div class="privacy-body">
+            <div class="privacy-subtitle">
+              <p>
+                株式会社GUNCY’S（以下、「当社」といいます。）は、当社が提供するサービスの利用者のプライバシーに関連する情報の取扱いについて、以下のとお
+                りプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
+              </p>
+            </div>
+
+            <div class="privacy-main">
+              <div class="category-title">
+                <p>第1条（利用者情報）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    「利⽤者情報」とは、個⼈情報（個⼈情報の保護に関する法律に定義される「個⼈情報」をいいます。以下同じ。）のほか、利⽤者個⼈を間接的に識
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    別できる情報、通信サービス上の⾏動履歴（ウェブページの閲覧履歴や検索履歴も含みます。）、その他利⽤者に関連して蓄積された情報を意味します。
+                    当社が収集する利⽤者情報は、氏名、住所、電話番号、メールアドレス、性別、生年月日、その他当社が定める入力フォームに利用者が入力する情
+                    報、並びに端末情報等が含まれます。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第2条（収集・利用する目的）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    当社が利用者情報を収集・利用する目的は、以下のとおりです。
+                    <br />
+                    (1) 当社サービスに関する登録の受付、本人確認 <br />
+                    (2) 当社サービスの提供、維持、運営、保護、改善 <br />
+                    (3)
+                    当社サービスに関するご案内、ご連絡、アンケート、お問い合わせ等への対応
+                    <br />
+                    (4)
+                    利用規約、利用契約等に違反した利用者や、不正・不当な目的で当社サービスを利用しようとする利用者の特定をし、ご利用をお断りするため
+                    <br />
+                    (5) 当社サービスの利⽤状況等の調査、分析 <br />
+                    (6) 当社サービスに関する規約等の変更等の通知 <br />
+                    (7)
+                    当社のサービス施策・事業戦略立案、サービス開発、マーケティング等
+                    <br />
+                    (8) 上記の利用目的に付随する目的
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    別できる情報、通信サービス上の⾏動履歴（ウェブページの閲覧履歴や検索履歴も含みます。）、その他利⽤者に関連して蓄積された情報を意味します。
+                    当社が収集する利⽤者情報は、氏名、住所、電話番号、メールアドレス、性別、生年月日、その他当社が定める入力フォームに利用者が入力する情
+                    報、並びに端末情報等が含まれます。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">3. </span>
+                  <p>
+                    当社は、個⼈情報を、その収集時点における本ポリシーに記載されている利⽤⽬的の範囲を超えて利⽤することはありません。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第3条（利用中止の要請）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <p>
+                    利⽤者は、利⽤者情報の全部⼜は⼀部についてその利⽤の停⽌を求めることができ、この場合、当社は、速やかに、当社の定めるところに従い、その
+                    利⽤を停⽌します。但し、利⽤者情報の項⽬によっては、その収集⼜は利⽤が当社サービスの前提となるため、当社所定の⽅法により本サービスを解約
+                    した場合に限り、当社はその収集を停⽌するものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第4条（個人情報の第三者提供）</p>
+              </div>
+
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    当社は、利用者情報のうち個人情報については、次に掲げる場合を除いて、あらかじめ利用者の同意を得ることなく、第三者に提供しません。但し、
+                    個人情報保護法その他の法令で認められる場合を除きます。
+                    <br />
+                    (1)
+                    人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき
+                    <br />
+                    (2)
+                    国の機関もしくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の
+                    同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき
+                    <br />
+                    (3)
+                    当社が利⽤⽬的の達成に必要な範囲内において個⼈情報の取扱いの全部⼜は⼀部を委託するとき
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    前項の定めにかかわらず、次に掲げる場合には、当該情報の提供先は、第三者に該当しないものとします。
+                    <br />
+                    (1)
+                    合併その他の事由による事業の承継に伴って個人情報が提供される場合
+                    <br />
+                    (2)
+                    個人情報を特定の者との間で共同して利用する場合であって、その旨並びに共同して利用される個人情報の項目、共同して利用する者の範囲、
+                    利用する者の利用目的及び当該個人情報の管理について責任を有する者の氏名又は名称について、あらかじめ本人に通知し、又は本人が容易に知り
+                    得る状態に置いた場合
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第5条（個人情報の開示）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no"> </span>
+                  <p>
+                    当社は、利用者ご本人から個人情報の開示を求められたときは、利用者ご本人に対し、遅滞なくこれを開示します。但し、開示することにより次の
+                    いずれかに該当する場合は、その全部又は一部を開示しないこともあり、開示しない決定をした場合には、その旨を遅滞なく通知します。なお、
+                    個人情報の開示に際しては、1件あたり5,000円の手数料を申し受けますので、あらかじめご了承ください。<br />
+                    (1)
+                    本人又は第三者の生命、身体、財産その他の権利利益を害するおそれがある場合
+                    <br />
+                    (2)
+                    当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合
+                    <br />
+                    (3) その他法令等に違反することとなる場合 <br />
+                    前項の定めにかかわらず、当社は、履歴情報及び特性情報等の個人情報以外の情報については、法令上必要な場合を除き本人に開示する義務を負いません。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第6条（個人情報の訂正等）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no"></span>
+                  <p>
+                    利用者は、当社の保有する自己の個人情報が誤った情報である場合には、当社が定める手続きにより、当社に対して個人情報の訂正又は削除（以下、
+                    「訂正等」といいます。）を請求することができます。<br />
+                    当社は、利用者から前項の請求を受けてその請求に応じる必要があると判断した場合には、遅滞なく、当該個人情報の訂正等を行うものとします。<br />
+                    当社は、前項の規定に基づき訂正等を行った場合、又は訂正等を行わない旨の決定をしたときは遅滞なく、これを利用者に通知します。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第7条（個人情報の利用停止等）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no"> </span>
+                  <p>
+                    当社は、本人から、個人情報が、利用目的の範囲を超えて取り扱われているという理由、又は不正の手段により取得されたものであるという理由に
+                    より、当社が定める手続きに従い、その利用の停止又は消去（以下、「利用停止等」といいます。）を求められた場合には、遅滞なく必要な調査を
+                    行います。<br />
+                    当社は、前項の調査結果に基づき、その請求に応じる必要があると判断した場合には、遅滞なく、当該個人情報の利用停止等を行います。<br />
+                    当社は、前項の規定に基づき利用停止等を行った場合、又は利用停止等を行わない旨の決定をしたときは、遅滞なく、これを利用者に通知します。<br />
+                    前二項にかかわらず、調査又は利用停止等に多額の費用を有する場合その他調査や利用停止等を行うことが実務上困難な場合であって、利用者の権
+                    利を保護するためこれに代わるべき措置をとれる場合は、当社の任意の裁量において、調査又は利用停止等に替えてこの代替措置をとることができ
+                    るものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第8条（履歴情報・特性情報の収集等）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no"> </span>
+                  <p>
+                    履歴情報及び特性情報とは、ご利用頂いたサービスや、ご覧になったページや履歴、ご利用時間帯、ご利用の方法、ご利用環境、IPアドレス、
+                    Cookie（クッキー）情報、携帯端末の識別情報など、上記に定める個人情報以外のものを指します。<br />
+                    当社は、利用者が使うコンピューターのハードウエア及びソフトウエア情報を収集することがあります。この情報には、IPアドレス、ブラウザの種
+                    類、ドメイン名、アクセス時間、及び参照されるウェブサイトのURL等が含まれます。当社は、これらの情報を不正アクセスの監視、セキュリティ
+                    やサービス品質の向上、ウェブサイトの利用動向等の調査・分析を行うための統計情報として利用いたします。<br />
+                    当社は、ウェブサイト運営のために利用者のCookie（クッキー）情報を収集し、参照できるものとします。利用者は、自らのブラウザの設定により
+                    Cookie（クッキー）の機能を無効にすることもできますが、Cookie（クッキー）を拒否する設定を行った場合、インターネット上のサービスや機能
+                    の一部又は全部の利用に制約を受ける場合がありますので、あらかじめご了承ください。<br />
+                    当社のウェブサイトでは、ウェブサイト利⽤状況の分析や改善等のために、Googleによるアクセス解析ツール・Googleアナリティクスを使用して
+                    います。そのため、データ収集のためにGoogleがお使いのブラウザにCookie（クッキー）を設定したり、既存のCookie（クッキー）を読み取った
+                    りする場合があります。利⽤者が当社のウェブサイトを利⽤することで、上記⽬的及び方法のもとGoogle及びウェブサイト管理者がデータ収集・処
+                    理を行うことに関して、利用者が同意したものとみなします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第9条（プライバシーポリシーの変更）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no"> </span>
+                  <p>
+                    本ポリシーの内容は、法令に別段の定めのある事項を除いて、利用者に通知することなく、変更することができるものとします。法令上利⽤者の同
+                    意が必要となるような内容の変更の場合は、当社所定の⽅法で利⽤者の同意を得るものとします。<br />
+                    当社が別途定める場合を除いて、変更後のプライバシーポリシーは、当社ウェブサイトに掲載したときから効力を生じるものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第10条（免責）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no"> </span>
+                  <p>
+                    当社のウェブサイトからリンクやバナーなどによって他のウェブサイトに移動された場合、移動先のウェブサイトで提供される情報、サービス等に
+                    ついて、当社は、一切の責任を負いません。<br />
+                    当社のウェブサイトの内容につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤った情報が混入したり、情報が古くなっている
+                    こともございます。当社のウェブサイトのご利用によって生じた損害等について、当社は一切の責任を負いかねますのであらかじめご了承ください。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第11条（お問い合わせ窓口）</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <p>
+                    本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>株式会社GUNCY’S</p>
+                <p class="mail">
+                  電子メールアドレス：hello@guncys.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-area">
+        <div class="footer-container">
+          <div class="footer-menu">
+            <a href="privacy-policy.html" class="link-footer"
+              >プライバシーポリシー</a
+            >
+            <a href="terms-of-service.html" class="link-footer">利用規約</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/letscan.js"></script>
+  </body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>LETSCAN</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <body id="body-area">
+    <nav>
+      <div class="nav-area navigation">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <a href="index.html" class="link-logo">
+              <img src="assets/images/letscan_logo.svg" alt="" class="logo" />
+            </a>
+          </div>
+          <div class="nav-menu">
+            <ul class="menu-flex">
+              <li class="menu-base">
+                <a href="index.html" class="menu-link">トップ</a>
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#technology"
+                  id="link_technology"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >テクノロジー</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#gallery"
+                  id="link_gallery"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >ギャラリー</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#sample"
+                  id="link_sample"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >サンプル</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#faq"
+                  id="link_faq"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >FAQ</a
+                >
+              </li>
+              <li class="menu-base">
+                <a
+                  href="#contact"
+                  id="link_contact"
+                  onclick="tapClick(this)"
+                  class="menu-link"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="menu-icon" class="nav-menu-sp sp">
+            <div class="icon-set">
+              <a class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="slideout-menu">
+      <ul>
+        <li>
+          <a href="index.html">トップ</a>
+        </li>
+        <li>
+          <a id="link_technologys" href="#technology" onclick="closeNavSp()"
+            >テクノロジー
+          </a>
+        </li>
+        <li>
+          <a id="link_gallerys" href="#gallery" onclick="closeNavSp()"
+            >ギャラリー</a
+          >
+        </li>
+        <li>
+          <a id="link_samples" href="#sample" onclick="closeNavSp()"
+            >サンプル</a
+          >
+        </li>
+        <li>
+          <a id="link_faqs" href="#faq" onclick="closeNavSp()">FAQ </a>
+        </li>
+        <li>
+          <a id="link_contacts" href="#contact" onclick="closeNavSp()"
+            >お問い合わせ</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="privacy-area">
+        <div class="privacy-container">
+          <div class="privacy-title">
+            <h1>利用規約</h1>
+          </div>
+          <div class="privacy-body">
+            <div class="privacy-subtitle">
+              <p>
+                利用者様は、株式会社GUNCY’S（以下、「当社」といいます。）が運営するウェブサイト（以下、「当社サイト」といいます。）及び当社の提供する
+                サービス（以下、「当社サービス」といいます。）を利用するにあたり、当社との合意事項として、以下に定める規約（以下、「本規約」といいます。）
+                の全てをご同意いただく必要があります。規約の内容について不明点等ございましたら、当社サービスのご利用前に、当社までご連絡ください。
+              </p>
+            </div>
+            <div class="privacy-follows">
+              <p>
+                なお、利用者様が当社サイト又は当社サービスの利用を開始することにより、利用者様は本利用規約に同意したものとみなされますので、ご注意ください。
+              </p>
+            </div>
+
+            <div class="privacy-main">
+              <div class="category-title">
+                <p>第1条 本規約の適用範囲及び変更</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    本規約は、当社サイト及び当社サービスの利用条件を定めるものです。<br />
+                    当社が利用者に提供するサービスに関して、当社が別途当該サービスの利用にかかる条件を定めた場合において、当該条件と本規約が抵触するとき
+                    は、当該条件が優先して適用されるものとします。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    当社は、以下の各号の何れかに該当する場合、当社の裁量により、本規約を変更することができます。<br />
+                    (1) 本規約の変更が、利用者の一般の利益に適合する場合<br />
+                    (2)
+                    本規約の変更が、契約をした目的に反せず、かつ、変更の必要性、変更後の内容の相当性、変更の内容その他の変更に係る事情に照らして合理
+                    的なものである場合当社は前項による本規約の変更にあたり、変更後の本規約の効力発生日までの相当期間、本規約を変更する旨及び変更後の本規
+                    約の内容とその効力発生日を当社サイトに掲示その他当社が別途定める方法により、利用者に対して通知します。
+                    変更後の本規約の効力発生日以降に利用者が当社サービスを利用した場合、利用者は、変更後の本規約に同意したものとみなします。
+                    本規約の全部又は一部が変更された場合、当社サイト及び当社サービスの利用に関して、変更後の本規約が利用者及び当社に適用され、利用者及び
+                    当社は変更後の本規約のみに従うものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第2条 知的財産権</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    当社サイト又は当社サービスを通じて入手可能なデータ、情報、画像及びコンテンツ、並びに当社サイト又は当社サービスにおいて表示されるロゴ
+                    マーク（以下、総称して「コンテンツ」といいます。）の著作権その他の知的財産権は、全て当社又はコンテンツ提供者に専属的に帰属します。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    利用者は、目的の如何を問わず、コンテンツの無断複製、無断転載その他の無断二次利用行為その他の国内外の著作権法を含む法令により禁止され
+                    る行為を行ってはなりません。万が一、当該行為が発見された場合、当社は直ちに法的措置をとることができるものとします。
+                  </p>
+                </div>
+
+                <div class="category-desc">
+                  <span class="desc-no">3. </span>
+                  <p>
+                    本条の規定に違反して利用者と第三者との間で何らかの紛争が生じた場合、利用者は、その責任と費用において解決するとともに、当社に損害、損
+                    失、費用及び不利益（以下、「損害等」といいます。）を与えてはならないものとします。また、万が一、当社に損害等が生じた場合、利用者は、
+                    当該損害等を全て賠償するものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第3条 サンプルデータの取扱い</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    利用者が当社サイト又は当社サービスを通じて、当社よりサンプルデータ又は画像等の提供を受け又は入手した場合（以下、「サンプルデータ」と
+                    いいます。）、利用者はその取扱いについて、当社の指示に従うものとします。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    利用者は、サンプルデータについて、当社に無断で、複製、販売、譲渡、貸与、出版、頒布、漏洩、公開その他これらに類似する行為を行ってはな
+                    らず、また、著作権その他の知的財産権又はその他の権利を侵害してはならないものとします。
+                  </p>
+                </div>
+
+                <div class="category-desc">
+                  <span class="desc-no">3. </span>
+                  <p>
+                    利用者は、サンプルデータが第三者によって不正に使用されていることを発見した場合、直ちに当社に連絡するものとし、当社の指示がある場合は
+                    当該指示に従うものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第4条 免責事項</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    当社は、当社サイト又は当社サービス上において表示される内容及びコンテンツ、並びにサンプルデータについて、適切性の確保に努めております
+                    が、様々な専門性、属性、利用目的を有する個々の利用者との関係において、有効性、有用性、正確性、確実性、安全性、最新性、完全性及び目的
+                    への適合性を含め、何らの保証をせず責任を負いません。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    当社は、当社サイトから他のウェブサイト若しくはリソースへのリンク又は第三者のウェブサイト若しくはリソースから当社サイトへのリンクを提
+                    供している場合、当該リンク先又はリンク元のウェブサイト又はリソースの内容、利用及びその結果（適法性、有効性、正確性、確実性、安全性、
+                    最新性及び完全性を含みますが、これらに限りません。）について、何ら保証せず責任を負いません。当社は、リンク先のウェブサイト又はリソー
+                    スの内容が、法令違反又は当社サービスの管理若しくは運営上不適切であると合理的に判断した場合、利用者に何らの通知又は催告をすることなく、
+                    当該リンクを削除できるものとします。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">3. </span>
+                  <p>
+                    第6条の何れかに該当する場合又は不可抗力によって当社サイト又は当社サービスが停止又は中止されたことに関して、当社は責任を負いません。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">4. </span>
+                  <p>
+                    利用者が、当社サイト又は当社サービスを利用することにより、他の利用者又は第三者に対して損害等を与えた場合、当該利用者は自らの責任と費
+                    用において解決するとともに、当社に損害等を与えないものとします。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">5. </span>
+                  <p>
+                    当社は、請求原因や事由の如何にかかわらず、当社の責めに帰すべき事由により当社サービスに起因又は関連して利用者に生じた損害等について、
+                    利用者に現実に生じた通常かつ直接の範囲の損害等に限り、当社が利用者より受領済みの代金相当額を上限（当社に故意又は重過失がある場合は、
+                    当該上限は適用されません。）として、責任を負うものとします。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第5条 当社サービスの利用</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    利用者は、法令、本規約、その他当社が別途定める条件に従い、当社サイト及び当社サービスを利用するものとします。<br />
+                    当社は、以下の各号の何れかに該当することが判明した場合、利用者からの利用申込を承認しないことがあり、また、当該利用者に事前に通知又は
+                    催告することなく、当該利用者に対する当社サービスの利用停止、利用者登録の取消その他当社が適当と考える措置を講じることができるものとします。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    (1)
+                    利用者が、当社又は当社の関係会社が現在提供する又は過去に提供していたサービスに関する規約に違反したこと又はその他の事由により、利
+                    用者登録の取消その他の処分を受けていた場合 <br />
+                    (2)
+                    利用者が当社に申請又は提供した内容に、虚偽の事項が含まれていた場合
+                    <br />
+                    (3)
+                    利用者が、当社又は当社の関係会社が現在提供する又は過去に提供していたサービスに関して、料金その他の支払をしていない又は正当な理由
+                    なく長期間にわたり債務不履行の状態である場合
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">3. </span>
+                  <p>(4) 利用者が、本規約に違反した場合</p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">4. </span>
+                  <p>
+                    (5)
+                    利用申込を承認することが当社サービスの運営又は管理上、不適当であると当社が合理的に判断する場合
+                    <br />
+                    (6)
+                    利用者が当社又は当社の関係会社との間の契約条件に違反した場合
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">5. </span>
+                  <p>
+                    利用者は、氏名、住所、電話番号その他当社に申請又は提供した内容の全部又は一部に変更が生じた場合、当社が別途指定する方法により、直ちに
+                    利用者情報を更新するものとします。<br />
+                    当社は、第2項に起因又は関連して又は第3項の不履行により、利用者に生じた損害等について、請求原因又は事由の如何にかかわらず、損害賠償、
+                    補償、補填その他の責任を負いません。
+                  </p>
+                </div>
+              </div>
+
+              <div class="category-title">
+                <p>第6条 停止又は中止</p>
+              </div>
+              <div class="category-desc-area">
+                <div class="category-desc">
+                  <span class="desc-no">1. </span>
+                  <p>
+                    当社は、以下の各号の何れかに該当する場合、利用者に事前に通知又は催告をすることなく、当社サイト及び当社サービスの提供の全部又は一部を
+                    停止又は中止できるものとします。<br />
+                    (1)
+                    火災、地震、洪水、落雷、大雪、疫病その他の不可抗力が生じた場合
+                    <br />
+                    (2) 戦争、内乱、テロ、暴動、騒擾その他の社会不安が生じた場合
+                    <br />
+                    (3)
+                    当社が契約している電話会社、運送会社又はプロバイダから適切なサービスを受けられなかった場合
+                    <br />
+                    (4) 当社が技術的に対応困難な事由が生じた場合 <br />
+                    (5)
+                    当社サービス提供のためのコンピューターシステム（以下、「システム」といいます。）の定期保守及び緊急保守の場合
+                    <br />
+                    (6)
+                    システムの不良及び第三者からの不正アクセス、コンピューターウィルスの感染等により、システムの運用が困難になった場合
+                    <br />
+                    (7) 行政機関又は司法機関から相当な根拠に基づき要請された場合
+                    <br />
+                    (8)
+                    その他やむを得ず当社サイト若しくは当社サービスの提供の停止若しくは中止が必要又は継続が困難であると当社が判断した場合
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">2. </span>
+                  <p>
+                    当社は、一定の予告期間をもって当社サイト若しくは当社サービスを停止又は中止できるものとし、利用者は、あらかじめこれを了承するものとします。
+                  </p>
+                </div>
+                <div class="category-desc">
+                  <span class="desc-no">3. </span>
+                  <p>
+                    当社は、本条に起因又は関連して利用者に生じた損害等について、請求原因又は事由の如何にかかわらず、損害賠償、補償、補填その他の責任を負いません。
+                  </p>
+                </div>
+
+                <div class="category-title">
+                  <p>第7条 禁止事項</p>
+                </div>
+                <div class="category-desc-area">
+                  <div class="category-desc">
+                    <span class="desc-no">1. </span>
+                    <p>
+                      利用者は、以下の各号に該当する行為を行ってはならないものとします。
+                      <br />
+                      (1)
+                      当社サイト又は当社サービスを通じて入手したコンテンツを、当社に無断で、複製、販売、出版、頒布、公開その他これらに類似する行為
+                      <br />
+                      (2)
+                      他の利用者、その他の第三者又は当社の著作権その他の知的財産権、肖像権、人格権、プライバシー権、パブリシティ権その他の権利を侵害す
+                      る行為又はそれらのおそれのある行為<br />
+                      (3)
+                      他の利用者、その他の第三者又は当社に迷惑若しくは損害等を与える行為又はそれらのおそれのある行為
+                      <br />
+                      (4)
+                      公序良俗に反する行為その他法令に違反する行為又はそれらのおそれのある行為
+                      <br />
+                      (5)
+                      虚偽又は誤解を招くような内容を含む情報を当社に申告する行為
+                      <br />
+                      (6) 他の利用者の個人情報を不当に収集、蓄積又は保存する行為
+                      <br />
+                      (7)
+                      コンピューターのソフトウェア、ハードウェア又は通信機器の機能を妨害、破壊又は制限するように設計されたコンピューターウィルス、
+                      コンピューターコード、ファイル又はプログラムを当社サイト又は当社サービスにアップロード又はメール等の手段で送信する行為
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">2. </span>
+                    <p>
+                      (8)
+                      当社の信用を毀損又は失墜させる行為その他当社が不適当であると合理的に判断する行為<br />
+                      利用者は、前項の違反に起因又は関連して当社又は第三者に生じた損害等を全て賠償するものとします。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="category-title">
+                  <p>第8条 反社会勢力の排除</p>
+                </div>
+                <div class="category-desc-area">
+                  <div class="category-desc">
+                    <span class="desc-no">1. </span>
+                    <p>
+                      利用者は、当社に対して、以下の各号の事項を確約するものとします。<br />
+                      (1)
+                      自らが、暴力団、暴力団関係企業、総会屋若しくはこれらに準ずる者又はその構成員（以下、「反社会勢力」といいます。）ではないこと。<br />
+                      (2)
+                      利用者が法人の場合、自らの役員（業務を執行する社員、取締役、執行役又はこれらに準ずる者をいいます。）が反社会勢力ではないこと。<br />
+                      (3)
+                      反社会勢力に自己の名義を利用させ、又は反社会勢力の利益に供するために当社サイト又は当社サービスを利用するものではないこと。
+                      <br />
+                      (4)
+                      自ら又は第三者を利用して、当社に対する脅迫的な言動又は暴力を用いる行為や、偽計又は威力を用いて当社の業務を妨害し又は信用を毀損す
+                      る行為を行わないこと。
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">2. </span>
+                    <p>
+                      当社は、利用者が前項に違反した場合、当該利用者に何らの通知又は催告なく、当該利用者との一切の契約の解除及び利用者登録の抹消その他本規
+                      約に定める措置を講じることができるものとします。
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">3. </span>
+                    <p>
+                      前項の措置に起因又は関連して当該利用者に生じた損害等について、当社は損害賠償、補償、補填その他の責任を負いません。また、当該利用者は、
+                      第1項に違反したことに起因又は関連して当社に生じた損害等を賠償するものとします。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="category-title">
+                  <p>第9条 個人情報の取扱い</p>
+                </div>
+                <div class="category-desc-area">
+                  <div class="category-desc">
+                    <p>
+                      当社は、当社が別途定めるプライバシーポリシー等に従って、当社サイト又は当社サービスの利用に関連して当社が知り得た利用者の個人情報を取り
+                      扱うものとします。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="category-title">
+                  <p>第10条 分離可能性</p>
+                </div>
+                <div class="category-desc-area">
+                  <div class="category-desc">
+                    <p>
+                      本規約の何れかの条項の全部又は一部が無効又は違法となった場合であっても、当該無効又は違法は、如何なる意味でも本規約の他の条項並びにその
+                      解釈及び適用に何ら影響せず、これらの適法性及び有効性を損なわず、またこれらを無効にするものではありません。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="category-title">
+                  <p>第11条 譲渡禁止</p>
+                </div>
+                <div class="category-desc-area">
+                  <div class="category-desc">
+                    <span class="desc-no">1. </span>
+                    <p>
+                      利用者は、当社の書面による事前の承諾を得た場合を除き、本規約に基づく権利義務又は債権債務の全部又は一部を第三者に譲渡、移転、承継、
+                      担保提供その他の処分をしてはならないものとします。
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">2. </span>
+                    <p>
+                      当社は、当社サービスに係る事業の全部又は一部を第三者に移転すること（事業譲渡に限らず、会社分割その他事業が移転するあらゆる場合を含み
+                      ます。）に伴い、本規約上の地位及び本規約を含む当社と利用者との契約関係に基づく権利義務を当該第三者に譲渡することができ、利用者は、
+                      かかる譲渡について本項において予め同意したものとします。
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">3. </span>
+                    <p>
+                      前項の措置に起因又は関連して当該利用者に生じた損害等について、当社は損害賠償、補償、補填その他の責任を負いません。また、当該利用者は、
+                      第1項に違反したことに起因又は関連して当社に生じた損害等を賠償するものとします。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="category-title">
+                  <p>第12条 その他</p>
+                </div>
+                <div class="category-desc-area">
+                  <div class="category-desc">
+                    <span class="desc-no">1. </span>
+                    <p>
+                      当社サイト又は当社サービスに関して、本規約により解決できない問題が生じた場合、当社と利用者との間で双方誠実に話し合い、解決に努めるも
+                      のとします。
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">2. </span>
+                    <p>
+                      本規約は日本法に準拠し、同法に基づいて解釈されます。日本法以外を準拠法とする抵触法のルールの適用は、いずれも排除されるものとします。
+                    </p>
+                  </div>
+                  <div class="category-desc">
+                    <span class="desc-no">3. </span>
+                    <p>
+                      当社サイト若しくは当社サービスの利用又は本規約に関して発生する紛争については、東京簡易裁判所又は東京地方裁判所を第一審の専属合意管轄
+                      裁判所とします。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-area">
+        <div class="footer-container">
+          <div class="footer-menu">
+            <a href="privacy-policy.html" class="link-footer"
+              >プライバシーポリシー</a
+            >
+            <a href="terms-of-service.html" class="link-footer">利用規約</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/letscan.js"></script>
+  </body>
+</html>
